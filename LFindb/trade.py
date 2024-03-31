@@ -13,6 +13,7 @@ def get_hist_price(*, symbol='', start_date='', end_date='', adjust='qfq', field
         return
     if symbol == None:
         print("重新输入查询代码")
+        return
     if fields == "*":
         sql_native = f"select * from {tablename}" 
     else:
